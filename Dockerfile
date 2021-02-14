@@ -8,7 +8,6 @@ RUN echo "*** installing packages ***" \
 COPY openvpn /etc/openvpn
 COPY scripts /etc/scripts
 RUN mkdir -p /scripts && ln -s /etc/scripts/openvpn-pre-start.sh /scripts/openvpn-pre-start.sh
-COPY VERSION .
 
 ENV OPENVPN_USERNAME="**None**" \
     OPENVPN_PASSWORD="**None**" \
